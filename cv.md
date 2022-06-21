@@ -7,13 +7,16 @@
 ## Contact info
 
 > **Gdansk, Poland**
+
 > Denis.Bondarenko.pl@gmail.com
+
 > [LinkedIn](linkedin.com/in/denis-bondarenko-pl)
+
 > [Github](https://github.com/ExIxIxS)
 
 ## Briefly About Myself
 
-I began my career after university in the railways branch in 2011 where I took initial skills of working with technical documentation and a stack of plenty of technology. The last 2 years I have been working in an International Company as lead technical writer,  where the main point of my work was development and management technical documentation with different types of content. Also I have a DSLR-camera for my hobby - photography and essential skills of graphic editing. 
+I began my career after university in the railways branch in 2011, where I took initial skills of working with technical documentation and a stack of plenty of technology. The last 2 years I have been working in an International Company as lead technical writer,  where the main point of my work was development and management technical documentation with different types of content. Also I have a DSLR-camera for my hobby - photography and essential skills of graphic editing. 
 I believe that my background  and passion for learning will make me a proficient Frontend Developer.
 
 ## Skills and Proficiency
@@ -42,7 +45,10 @@ I believe that my background  and passion for learning will make me a proficient
     """
     Output three numbers separated by a space: the values of RGB.
     
-    The top cube corresponding to the root of the XML document has a value of 1. The cubes directly below it have a value of 2. The cubes directly below it have a value of 3. etc. The value of a color is the sum of the values of all the cubes of that color. Output three numbers separated by a space: the values of Red, Green and Blue.
+    The top cube corresponding to the root of the XML document has a value of 1.
+    The cubes directly below it have a value of 2.
+    The cubes directly below it have a value of 3. etc.
+    The value of a color is the sum of the values of all the cubes of that color. Output three numbers separated by a space: the values of Red, Green and Blue.
     """
     
         input_data = input()
