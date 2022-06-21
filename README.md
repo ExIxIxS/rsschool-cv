@@ -1,2 +1,1 @@
-# rsschool-cv
-RSSchool CV MarkDown
+https://ExIxIxS.github.io/rsschool-cv/cv
