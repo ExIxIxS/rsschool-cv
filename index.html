@@ -16,8 +16,8 @@
         <h1 id="name">Denis Bondarenko</h1>
         <h3>Junior Front-End Developer</h3>        
     </header>
-    <section class="row">
-        <section class="column main">
+    <div class="row">
+        <div class="column main">
             <article id="about">       
                 <h2><span id="icon-about" class="material-icons">assignment</span> Briefly About Myself</h2>
                 <p>I began my career after university in the railway industry in 2011, where I took initial skills of working with technical documentation and a stack of plenty of technology.
@@ -49,7 +49,7 @@
                 <h2><span id="icon-code" class="material-icons">code</span> Code examples</h2>
                 <details>
                     <summary>Python</summary>       
-                    <code class="code-exmpl">
+                    <div class="code-exmpl">
                     <pre>   
 import xml.etree.ElementTree as xmlET
 
@@ -76,28 +76,28 @@ def diving(parent, i=1):
 diving(root)
 print(*result.values())
                     </pre>
-                    </code>
+                </div>
                 </details>
                 <details>
                     <summary>HTML</summary>
-                    <code class="code-exmpl">
+                    <div class="code-exmpl">
                     <pre>
-&lt!-- Code details --&gt
+&lt;!-- Code details --&gt;
 
-&ltdetails&gt
-    &ltsummary&gtCSS&lt/summary&gt
-    &ltcode&gt
-    &ltpre&gt
+&lt;details&gt;
+    &lt;summary&gt;CSS&lt;/summary&gt;
+    &lt;code&gt;
+    &lt;pre&gt;
     -- Put your code here --
-    &lt/pre&gt
-    &lt/code&gt
-&lt/details&gt
+    &lt;/pre&gt;
+    &lt;/code&gt;
+&lt;/details&gt;
                     </pre>
-                    </code>
+                </div>
                 </details>
                 <details>
                     <summary>CSS</summary>
-                    <code class="code-exmpl">
+                    <div class="code-exmpl">
                     <pre>
 /* page color styling - color option №1 */
 :root {
@@ -108,20 +108,20 @@ print(*result.values())
     --main-font-color: #000;    
 }
                     </pre>
-                    </code>
+                </div>
                 </details>
                 <details>
                     <summary>JS</summary>
-                    <code class="code-exmpl">
+                    <div class="code-exmpl">
                     <pre>
 Nothing yet
                     </pre>
-                    </code>
+                </div>
                 </details>
             </article>
-        </section>
+        </div>
 
-        <section class="column side">
+        <div class="column side">
             <article id="contacts">
                 <h2><span id="icon-contacts" class="material-icons">contact_mail</span> Contact info</h2>
                 <ul>
@@ -154,14 +154,14 @@ Nothing yet
             <article id="languges">       
                 <h2><span id="icon-lang" class="material-icons">translate</span> LANGUAGES</h2>
                 <ul>
-                    <li>English (Professional working proficiency, CEFR B2)</li>
-                    <li>Russian (Native)</li>
-                    <li>Belarusian (Native)</li>
-                    <li>Polish (Beginner)</li>
+                    <li><i class="languge">English</i> (Professional working proficiency, CEFR B2)</li>
+                    <li><i class="languge">Russian</i> (Native)</li>
+                    <li><i class="languge">Belarusian</i> (Native)</li>
+                    <li><i class="languge">Polish</i> (Beginner)</li>
                 </ul>
                 </article>            
-        </section>
-    </section>
+        </div>
+    </div>
     <footer>
         <a class="anchor" href="https://github.com/ExIxIxS">
         <svg id="github-logo" height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true">

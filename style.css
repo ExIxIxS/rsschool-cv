@@ -94,7 +94,7 @@ header h3 {
 .side {
     width: 38%;
     background-color: var(--aux-color1);
-    color: var(--main-font-color);    
+    color: var(--contrast-font-color);    
     margin-left: 2%;
     padding-bottom: 1.5vw;
 }
@@ -171,10 +171,26 @@ a:visited {color: var(--main-font-color);}
   
 a:hover {
     font-size: 1.3vw;
-    color: var(--main-font-color)
+    color: var(--main-font-color);
 }
 
-a:active {color: var(--main-font-color)}
+a:active {color: var(--main-font-color);}
+
+.side a:link {color: var(--contrast-font-color);}
+
+.side a:visited {color: var(--contrast-font-color);}
+  
+.side a:hover {
+    font-size: 1.3vw;
+    color: var(--contrast-font-color);
+}
+
+.side a:active {color: var(--contrast-font-color);}
+
+
+
+
+
 
 li .material-icons {
     color: var(--main-font-color);
@@ -190,9 +206,7 @@ h2 .material-icons {
     list-style: none;
 }
 
-#contacts a {
-    color: val(--main-font-color);
-}
+#languges li::marker {color: var(--main-font-color);}
 
 p {
     text-align: justify;
@@ -205,7 +219,7 @@ pre {
     margin: 0;
 }
 
-code {
+.code-exmpl {
     line-height: 1vw;
     background-color: var(--aux-color2);
     color: var(--contrast-font-color);
@@ -214,6 +228,11 @@ code {
     display: block;
     overflow: auto;
     box-shadow: 0 0px 3px 5px var(--main-color) inset, 0 0px 10px 5px var(--head-color) inset;
+}
+
+.languge {
+    font-style: normal;
+    font-weight: bold;
 }
 
 footer {
@@ -301,7 +320,7 @@ p.foot-block {
     animation-name: style-changer;
     animation-duration: 4s;
     animation-iteration-count: 1; 
-    animation-delay: 10s;
+    animation-delay: 15s;
     animation-fill-mode: forwards;
 }
 
@@ -330,4 +349,5 @@ p.foot-block {
         --aux-color2: #EEEEEE;
         --main-font-color: #EEEEEE;
         --contrast-font-color: #000;
+}
 }
