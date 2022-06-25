@@ -5,100 +5,108 @@
     <title>Denis Bondarenko CV</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,300&family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
 <div id="contener_centered">
-    <header>
+    <header class="clearfix">
+        <img src="img/selfy_crop_01.png" alt="Selfy">
         <h1 id="name">Denis Bondarenko</h1>
         <h3>Junior Front-End Developer</h1>        
     </header>
     <section class="row">
         <section class="column main">
             <article id="about">       
-                <h2 >Briefly About Myself</h2>
-                    <p>I began my career after university in the railways branch in 2011, where I took initial skills of working with technical documentation and a stack of plenty of technology. 
-                    The last 2 years I have been working in an International Company as lead technical writer,  where the main point of my work was development and management technical documentation with different types of content. 
-                    Also I have a DSLR-camera for my hobby - photography and essential skills of graphic editing. 
+                <h2><span id="icon-about" class="material-icons">assignment</span> Briefly About Myself</h2>
+                    <p>I began my career after university in the railways branch in 2011, where I took initial skills of working with technical documentation and a stack of plenty of technology.
+                    <br>The last 2 years I have been working in an International Company as lead technical writer,  where the main point of my work was development and management technical documentation with different types of content.
+                    <br>Also I have a DSLR-camera for my hobby - photography and essential skills of graphic editing. 
                     <br>I believe that my background  and passion for learning will make me a proficient Frontend Developer.</p>
             </article>
-            <article id="code">       
-                <h2>Code examples</h2>
-                <h3>HTML</h3>
-                <code>Nothin yet here</code>
-                <h3>CSS</h3>
-                <code>Nothin yet here</code>
-                <h3>JS</h3>
-                <code>Nothin yet here</code>
-                <h3>Python</h3>           
-                <code>
-                    import xml.etree.ElementTree as xmlET
-
-                    """
-                    Output three numbers separated by a space: the values of RGB.
-                    
-                    The top cube corresponding to the root of the XML document has a value of 1.
-                    The cubes directly below it have a value of 2.
-                    The cubes directly below it have a value of 3. etc.
-                    The value of a color is the sum of the values of all the cubes of that color. Output three numbers separated by a space: the values of Red, Green and Blue.
-                    """
-                    
-                        input_data = input()
-                        root = xmlET.fromstring(input_data)
-                        result = {'red': 0, 'green': 0, 'blue': 0}
-                    
-                    def diving(parent, i=1):
-                        color = parent.attrib['color']
-                        result[color] += i
-                        for child in parent:
-                            diving(child, i+1)
-                    
-                    diving(root)
-                    print(*result.values())</code>
-            </article>     
             <article id="education">       
-                <h2>Education</h2>
-                    <p>Belarusian State University of Transport, Belarus – Bachelor of Engineering - BE, Railroad and Railway Transportation / Electrician Engineer 2006 – 2011</p>
+                <h2><span id="icon-edu" class="material-icons">school</span> Education</h2>
+                    <p>2006 – 2011<br>Belarusian State University of Transport
+                    <br>Bachelor of Engineering - BE Railroad and Railway Transportation / Electrician Engineer</p>
                 <h3>Courses</h3>
                 <ul>
-                    <li>["Поколение Python"](https://stepik.org/cert/1382667)</li>
-                    <li>["Python: Основы и применение"](https://stepik.org/cert/1527393)</li>
+                    <li><a href="https://stepik.org/cert/1382667">["Generation Python"]</a></li>
+                    <li><a href="https://stepik.org/cert/1527393">["Python: Basics and application"]</a></li>
                     <li>RS School UpSkill Me (in progress)</li>
                 </ul>
                 </article>
+            <article id="code">       
+                <h2><span id="icon-code" class="material-icons">code</span> Code examples</h2>
+                <h3>Python</h3>       
+                <code class="code-exmpl">
+                <pre>   
+import xml.etree.ElementTree as xmlET
+
+"""
+Output three numbers separated by a space: the values of RGB.
+
+The top cube corresponding to the root of the XML document has a value of 1.
+The cubes directly below it have a value of 2.
+The cubes directly below it have a value of 3. etc.
+The value of a color is the sum of the values of all the cubes of that color.
+Output three numbers separated by a space: the values of Red, Green and Blue.
+"""
+                    
+input_data = input()
+root = xmlET.fromstring(input_data)
+result = {'red': 0, 'green': 0, 'blue': 0}
+
+def diving(parent, i=1):
+    color = parent.attrib['color']
+    result[color] += i
+    for child in parent:
+        diving(child, i+1)
+
+diving(root)
+print(*result.values())
+                </pre>
+                </code>
+                <h3>HTML</h3>
+                <code>Nothin here yet</code>
+                <h3>CSS</h3>
+                <code>Nothin here yet</code>
+                <h3>JS</h3>
+                <code>Nothin here yet</code>
+                
+            </article>
         </section>
         <section class="column side">
             <article id="contacts">
-                <h2>Contact info</h2>
+                <h2><span id="icon-contacts" class="material-icons">contact_mail</span> Contact info</h2>
                 <ul>
-                    <li>Gdansk, Poland</li>
-                    <li>Denis.Bondarenko.pl@gmail.com</li>
-                    <li>linkedin.com/in/denis-bondarenko-pl</li>
-                    <li>https://github.com/ExIxIxS</li>
+                    <li><span class="material-icons">gps_fixed</span> Gdansk, Poland</li>
+                    <li><span class="material-icons">email</span> Denis.Bondarenko.pl@gmail.com</li>
+                    <li><span class="material-icons">link</span> <a href="https://www.linkedin.com/in/denis-bondarenko-pl">Linked In</a></li>
                 </ul>
             </article>
-            <article>
-                <h2>Skills and Proficiency</h2>
+            <article id="skills">
+                <h2><span id="icon-skills" class="material-icons">hiking</span> Skills and Proficiency</h2>
                 <h3>Hard Skills</h3>
                 <ul>
-                    <li>HTML5, CSS3, Python3</li>
-                    <li>Adobe PS & LR, Corel Draw</li>
-                    <li>VS Code, PyCharm</li>
-                    <li>MS Office, Schema ST4 (CMS), XMetal Author</li>
-                    <li>Smarteam (cPLM), AutoCAD</li>
+                    <li><span class="material-icons">terminal</span> HTML5, CSS3, Python3</li>
+                    <li><span class="material-icons">image</span> Adobe PS & LR, Corel Draw</li>
+                    <li><span class="material-icons">format_indent_increase</span> VS Code, PyCharm</li>
+                    <li><span class="material-icons">update</span> GIT, GitHub</li>
+                    <li><span class="material-icons">document_scanner</span> MS Office, Schema ST4 (CMS), XMetal Author</li>
+                    <li><span class="material-icons">polyline</span> Smarteam (cPLM), AutoCAD</li>
                 </ul>
                 <h3>Soft Skills</h3>
                 <ul>
-                    <li>Analytical thinking</li>
-                    <li>Detail oriented</li>
-                    <li>Communication</li>
-                    <li>Self-organization and responsibility</li>
-                    <li>Creativity and flexibility</li>
-                    <li>Blind typing</li>
+                    <li><span class="material-icons">query_stats</span> Analytical thinking</li>
+                    <li><span class="material-icons">zoom_in_map</span> Detail oriented</li>
+                    <li><span class="material-icons">sentiment_satisfied_alt</span> Communication</li>
+                    <li><span class="material-icons">self_improvement</span> Self-organization and responsibility</li>
+                    <li><span class="material-icons">emoji_objects</span> Creativity and flexibility</li>
+                    <li><span class="material-icons">text_rotation_angleup</span> Blind typing</li>
                 </ul>
             </article>
-            <article>       
-                <h2>LANGUAGES</h2>
+            <article id="languges">       
+                <h2><span id="icon-lang" class="material-icons">translate</span> LANGUAGES</h2>
                 <ul>
                     <li>English (Professional working proficiency, CEFR B2)</li>
                     <li>Russian (Native)</li>
@@ -109,22 +117,13 @@
         </section>
     </section>
     <footer>
-        <nav>
             <div id="navbar">
             <ul>
-                <li><a href="#about" class="anchor">About</a></li>
-                <li><a href="#code" class="anchor">Code</a></li></li>
-                <li><a href="#contacts" class="anchor">Contacts & Skills</a></li>
+                <li><a href="https://github.com/ExIxIxS">Github Name</a></li>
+                <li><a href="" class="anchor">Course link</a></li></li>
+                <li><a href="#name" class="anchor">© Denis Bondarenko 2022</a></li>
             </ul>
             </div>
-        </nav>
-        <table>
-            <tr>
-                <td><div>Github Name</div></td>
-                <td><div>Course link</div></td>
-                <td><div><a href="#name">© Denis Bondarenko 2022</a></div><td>
-            </tr>
-        </table>
     </footer>
 </div>
 </body>
