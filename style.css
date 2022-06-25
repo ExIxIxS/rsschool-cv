@@ -103,8 +103,8 @@ header h3 {
 @media screen and (max-width: 600px) {
     .column {
       width: 100%;
-      padding: 5%;
-      margin: 1%;
+      padding: 1% 1% 1% 5%;
+      margin: 0;
     }
   }
 
