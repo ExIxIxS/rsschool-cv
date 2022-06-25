@@ -187,11 +187,6 @@ a:active {color: var(--main-font-color);}
 
 .side a:active {color: var(--contrast-font-color);}
 
-
-
-
-
-
 li .material-icons {
     color: var(--main-font-color);
     font-size: 1.3vw;
