@@ -11,7 +11,7 @@
 <body>
 <div id="contener_centered">
     <header class="clearfix">
-        <img src="img/selfy_crop_01.png" alt="Selfy">
+        <img id="selfy" src="img/selfy_crop_01.png" alt="Selfy">
         <h1 id="name">Denis Bondarenko</h1>
         <h3>Junior Front-End Developer</h1>        
     </header>
@@ -19,27 +19,28 @@
         <section class="column main">
             <article id="about">       
                 <h2><span id="icon-about" class="material-icons">assignment</span> Briefly About Myself</h2>
-                    <p>I began my career after university in the railways branch in 2011, where I took initial skills of working with technical documentation and a stack of plenty of technology.
-                    <br>The last 2 years I have been working in an International Company as lead technical writer,  where the main point of my work was development and management technical documentation with different types of content.
-                    <br>Also I have a DSLR-camera for my hobby - photography and essential skills of graphic editing. 
-                    <br>I believe that my background  and passion for learning will make me a proficient Frontend Developer.</p>
+                <p>I began my career after university in the railway industry in 2011, where I took initial skills of working with technical documentation and a stack of plenty of technology.
+                <br>The last 2 years I have been working in an International Company as lead technical writer,  where the main point of my work was development and management technical documentation with different types of content.
+                <br>Also I have a DSLR-camera for my hobby - photography and essential skills of graphic editing. 
+                <br>I believe that my background  and passion for learning will make me a proficient Frontend Developer.</p>
             </article>
             <article id="education">       
                 <h2><span id="icon-edu" class="material-icons">school</span> Education</h2>
-                    <p>2006 – 2011<br>Belarusian State University of Transport
-                    <br>Bachelor of Engineering - BE Railroad and Railway Transportation / Electrician Engineer</p>
+                <p>2006 – 2011<br>Belarusian State University of Transport
+                <br>Bachelor of Engineering - BE Railroad and Railway Transportation / Electrician Engineer</p>
                 <h3>Courses</h3>
                 <ul>
-                    <li><a href="https://stepik.org/cert/1382667">["Generation Python"]</a></li>
-                    <li><a href="https://stepik.org/cert/1527393">["Python: Basics and application"]</a></li>
-                    <li>RS School UpSkill Me (in progress)</li>
+                    <li><a href="https://stepik.org/course/58852">"Generation Python"</a></li>
+                    <li><a href="https://stepik.org/course/512">"Python: Basics and application"</a></li>
+                    <li><a href="https://rs.school/js-en/">RS School UpSkill Me (JS/FE)</a></li>
                 </ul>
                 </article>
             <article id="code">       
                 <h2><span id="icon-code" class="material-icons">code</span> Code examples</h2>
-                <h3>Python</h3>       
-                <code class="code-exmpl">
-                <pre>   
+                <details>
+                    <summary>Python</summary>       
+                    <code class="code-exmpl">
+                    <pre>   
 import xml.etree.ElementTree as xmlET
 
 """
@@ -64,17 +65,52 @@ def diving(parent, i=1):
 
 diving(root)
 print(*result.values())
-                </pre>
-                </code>
-                <h3>HTML</h3>
-                <code>Nothin here yet</code>
-                <h3>CSS</h3>
-                <code>Nothin here yet</code>
-                <h3>JS</h3>
-                <code>Nothin here yet</code>
-                
+                    </pre>
+                    </code>
+                </details>
+                <details>
+                    <summary>HTML</summary>
+                    <code class="code-exmpl">
+                    <pre>
+&lt!-- Code details --&gt
+
+&ltdetails&gt
+    &ltsummary&gtCSS&lt/summary&gt
+    &ltcode&gt
+    &ltpre&gt
+    -- Put your code here --
+    &lt/pre&gt
+    &lt/code&gt
+&lt/details&gt
+                    </pre>
+                    </code>
+                </details>
+                <details>
+                    <summary>CSS</summary>
+                    <code class="code-exmpl">
+                    <pre>
+/* page color styling - color option №1 */
+:root {
+    --head-color: #c91313;
+    --main-color: #FF5B00;
+    --aux-color1: #D4D925;
+    --aux-color2: #fff5aa;
+    --main-font-color: #000;    
+}
+                    </pre>
+                    </code>
+                </details>
+                <details>
+                    <summary>JS</summary>
+                    <code class="code-exmpl">
+                    <pre>
+Nothing yet
+                    </pre>
+                    </code>
+                </details>
             </article>
         </section>
+        
         <section class="column side">
             <article id="contacts">
                 <h2><span id="icon-contacts" class="material-icons">contact_mail</span> Contact info</h2>
@@ -117,13 +153,14 @@ print(*result.values())
         </section>
     </section>
     <footer>
-            <div id="navbar">
-            <ul>
-                <li><a href="https://github.com/ExIxIxS">Github Name</a></li>
-                <li><a href="" class="anchor">Course link</a></li></li>
-                <li><a href="#name" class="anchor">© Denis Bondarenko 2022</a></li>
-            </ul>
-            </div>
+        <a class="anchor" href="https://github.com/ExIxIxS">
+        <svg id="github-logo" height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true">
+            <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+        </svg>
+        <p class="foot-block">ExIxIxS</p></a>
+        <a class="anchor" href="https://rs.school/js-en/">
+        <img id="rss-logo" src="img/rs_school_js.svg" alt="RSSchool logo" width="73" height="26"></a>
+        <a class="anchor" href="#name" >© Denis Bondarenko 2022</a>
     </footer>
 </div>
 </body>

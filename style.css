@@ -1,25 +1,26 @@
-
-/* color option №1 */
+/* page color styling - color option №1 */
 :root {
     --head-color: #c91313;
     --main-color: #FF5B00;
-    --main-font-color: #000;
     --aux-color1: #D4D925;
-    --aux-color2: #fff5aa;    
+    --aux-color2: #fff5aa;
+    --main-font-color: #000;
+    --contrast-font-color: #000;    
 }
 
-/* color option №2
+/* color option №2 */
 :root {
     --head-color: #F15412;
     --main-color: #000;
-    --main-font-color: #EEEEEE;    
     --aux-color1: #34B3F1;
-    --aux-color2: #EEEEEE;    
+    --aux-color2: #EEEEEE;
+    --main-font-color: #EEEEEE;
+    --contrast-font-color: #000;       
 }
 */
 
 body {
-    background-color: rgb(202, 202, 202);
+    background-color: rgb(189, 189, 189);
 }
 
 #contener_centered {
@@ -56,7 +57,7 @@ header {
     display: table;
   }
 
-img {
+#selfy {
     width: 15vw;
     margin: 1vw 3vw 0 0;
     border-radius: 50%;
@@ -74,11 +75,6 @@ header h3 {
     padding: 2.0vw 0 0 1vw;
     margin-top: 0;
     font-size: 1.5vw;   
-}
-
-.anchor {
-    color: var(--aux-color2);
-    font-size: 1.2vw; 
 }
 
 .column {
@@ -136,13 +132,49 @@ h3 {
     font-size: 1vw;
 }
 
-p, li {font-size: 1.2vw;}
+summary {
+    text-transform: uppercase;
+    padding: 0.3vw 0 0.3vw 0;
+    margin: 0 2vw 0 1vw;
+    font-size: 1vw;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+summary:hover {
+    font-size: 1.1vw;
+}
+
+p {font-size: 1.2vw;}
 
 ul {
     padding-left: 0;
     padding-top: 0;
-    margin: 0 0 0 1.5vw;
+    margin: 0 2vw 0 2.5vw;
 }
+
+.side ul {
+    margin: 0 2vw 0 2.0vw;
+}
+
+#languges ul {
+    margin: 0 2vw 0 3.5vw;
+}
+
+li {font-size: 1.2vw;
+    padding: 0.2vw 0 0.2vw 0;
+}
+
+a:link {color: var(--main-font-color);}
+
+a:visited {color: var(--main-font-color);}
+  
+a:hover {
+    font-size: 1.3vw;
+    color: var(--main-font-color)
+}
+
+a:active {color: var(--main-font-color)}
 
 li .material-icons {
     color: var(--main-font-color);
@@ -168,15 +200,15 @@ p {
 }
 
 pre {
+    font-size: 0.85vw;
     padding: 0;
     margin: 0;
 }
 
 code {
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 0.85vw;
     line-height: 1vw;
     background-color: var(--aux-color2);
+    color: var(--contrast-font-color);
     padding: 1vw 1vw 1vw 2vw;
     margin: 0 2vw 0 0;
     display: block;
@@ -185,31 +217,51 @@ code {
 }
 
 footer {
-    width: 100%;
-    background-color: var(--head-color);
-    color: var(--aux-color2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw;
     font-size: 1.2vw;
-    padding: 1.5% 0 1.5% 0;
-    margin: 0;
+    color: var(--aux-color2);
+    background-color: var(--head-color);
 }
 
 footer a {
     color: var(--aux-color2);
     font-size: 1.2vw;
     background-color: var(--head-color);
-    margin-bottom: 1%;
 }
 
-footer ul {
-    list-style-type: none;
+#github-logo {
+    width: 3.5vw;
+    height: 3.5vw;
+    fill: var(--aux-color2);
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+}
+
+#rss-logo {
+    width: 6.5vw;
+    height: 3vw;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+}
+
+p.foot-block {
+    display: inline-block;
+}
+
+.anchor:link, .anchor:visited {
+    font-size: 1.2vw;
     margin: 0;
     padding: 0;
-    overflow: auto;
-
+    color: var(--aux-color2);
+    text-decoration: none;
 }
   
-footer li {
-    float: left;
-    padding: 1% 10% 1% 10%;
-    display: block;
-  }
+.anchor:hover, a:active {
+    color: var(--aux-color2);
+    text-decoration: none;
+}
