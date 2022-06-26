@@ -1,4 +1,4 @@
-/* page color styling - color option №1 */
+/* page color styling - color option №1
 :root {
     --head-color: #c91313;
     --main-color: #FF5B00;
@@ -8,7 +8,7 @@
     --contrast-font-color: #000;
 }
 
-/* color option №2
+/* color option №2 */
 :root {
     --head-color: #F15412;
     --main-color: #000;
@@ -16,6 +16,28 @@
     --aux-color2: #EEEEEE;
     --main-font-color: #EEEEEE;
     --contrast-font-color: #000;
+}
+*/
+
+/* color option №3
+:root {
+    --head-color: #2C3639;
+    --main-color: #3F4E4F;
+    --aux-color1: #A27B5C;
+    --aux-color2: #DCD7C9;
+    --main-font-color: #DCD7C9;
+    --contrast-font-color: #2C3639;
+}
+*/
+
+/* color option №4
+:root {
+    --head-color: #665d83;
+    --main-color: #5B7DB1;
+    --aux-color1: #61A4BC;
+    --aux-color2: #F7E2E2;
+    --main-font-color: #F7E2E2;
+    --contrast-font-color: #1A132F;
 }
 */
 
@@ -282,6 +304,7 @@ p.foot-block {
 
 /* Indicators and animation */
 
+
 .indicator {
     display: inline-block;
     width: 8vw;
@@ -312,11 +335,11 @@ p.foot-block {
 }
 
 :root {
-    animation-name: style-changer;
-    animation-duration: 4s;
-    animation-iteration-count: 1; 
-    animation-delay: 15s;
-    animation-fill-mode: forwards;
+    animation-name: style-changer-1;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-delay: 10s;
+/*   animation-fill-mode: forwards;  */
 }
 
 * {
@@ -329,20 +352,45 @@ p.foot-block {
     100% {width: 2.8vw;}
 }
 
-@keyframes style-changer {
-    0% {--head-color: #c91313;
+@keyframes style-changer-1 {
+    20% {
+        --head-color: #665d83;
+        --main-color: #5B7DB1;
+        --aux-color1: #61A4BC;
+        --aux-color2: #F7E2E2;
+        --main-font-color: #F7E2E2;
+        --contrast-font-color: #1A132F;
+    }
+    40% {
+        --head-color: #c91313;
         --main-color: #FF5B00;
         --aux-color1: #D4D925;
         --aux-color2: #fff5aa;
         --main-font-color: #000;
         --contrast-font-color: #000;
 }
-    100%{
-        --head-color: #F15412;
-        --main-color: #000;
-        --aux-color1: #34B3F1;
+    60% {
+        --head-color: #2C3639;
+        --main-color: #3F4E4F;
+        --aux-color1: #A27B5C;
+        --aux-color2: #DCD7C9;
+        --main-font-color: #DCD7C9;
+        --contrast-font-color: #2C3639;
+}
+    70% {
+        --head-color: #041562;
+        --main-color: #11468F;
+        --aux-color1: #DA1212;
         --aux-color2: #EEEEEE;
         --main-font-color: #EEEEEE;
-        --contrast-font-color: #000;
+        --contrast-font-color: #041562;
+}
+    90% {
+        --head-color: #041562;
+        --main-color: #11468F;
+        --aux-color1: #DA1212;
+        --aux-color2: #EEEEEE;
+        --main-font-color: #EEEEEE;
+        --contrast-font-color: #041562;
 }
 }
