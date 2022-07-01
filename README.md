@@ -1,1 +1,1 @@
-<a href="https://ExIxIxS.github.io/rsschool-cv/">
+https://ExIxIxS.github.io/rsschool-cv/
