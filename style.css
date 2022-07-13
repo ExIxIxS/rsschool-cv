@@ -167,6 +167,11 @@ ul {
     margin: 0 2vw 0 2.5vw;
 }
 
+#courses li a {
+    display: flex;
+    align-items: center;
+}
+
 .side ul {
     margin: 0 2vw 0 2.0vw;
 }
@@ -184,7 +189,7 @@ a:link {color: var(--main-font-color);}
 a:visited {color: var(--main-font-color);}
 
 a:hover {
-    font-size: 1.3vw;
+    font-size: 1.25vw;
     color: var(--main-font-color);
 }
 
@@ -330,6 +335,11 @@ p.foot-block {
     summary, summary:hover {
         font-size: 2vw;
     }
+
+    a:hover {
+        font-size: 2.6vw;
+    }
+
     pre {
         line-height: 2vw;
         font-size: 1.3vw;
@@ -361,11 +371,23 @@ p.foot-block {
 
 /* --- Indicators and animation --- */
 
+#codewars-status-bar {
+    width: 20vw;
+    height: 1.3vw;
+    margin-left: 1.5vw;
+}
+
+#codewars-status-bar img {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
 .indicator {
     display: inline-block;
     width: 8vw;
     height: 1vw;
-    margin: 0.1vw 2vw 0 2vw;
+    margin: 0.1vw 1.5vw 0 1.5vw;
     background-color: var(--aux-color2);
   }
 
